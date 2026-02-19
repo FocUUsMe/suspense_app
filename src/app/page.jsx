@@ -46,7 +46,9 @@ export default function Home() {
         </nav>
 
         <section className={styles.main_body}>
+            <h2 id={styles.page_title}> For you </h2>
 
+            
         </section>
       </main>
     </div>
