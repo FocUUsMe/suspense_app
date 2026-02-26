@@ -6,7 +6,7 @@
 
         return (
             <div className="skeleton_post">
-                {skeleton_data.map(post => <div key={post.id} className="skeleton_post">
+                {skeleton_data.map(post => <div key={post} className="skeleton_post">
                     <div className="skeleton_main_group">
                         <div className="skeleton_post_img"></div>
 
