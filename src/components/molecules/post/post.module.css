@@ -1,10 +1,17 @@
     .post{
-        width: 80%;
-        height: 800px;
-        border: 1px solid orange;
+        width: calc(80% + 100px);
+        height: 850px;
+        border-bottom: 1px solid orange;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 50px;
+    }
+
+    .main_group{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .post_img{
@@ -19,14 +26,37 @@
         justify-content: space-between;
     }
 
+    .group_1{
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        width: 500px;
+    }
+
     .post_pfp{
        width: 48px;
        height: 48px;
-       border-radius: 50%; 
+       border-radius: 50%;
+       background-color: rgb(255, 174, 0);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+            & img{
+                width: 40px;
+            }
     }
 
     .post_title{
         font-size: 1.3rem;
+    }
+
+    .post_likes{
+        font-size: 1.4em;
+        width: 100px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
     }
 
     .like_btn{

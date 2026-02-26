@@ -12,12 +12,14 @@
         
         return (
             <div className={styles.post}>
-                <div>
+                <div className={styles.main_group}>
                     <img className={styles.post_img} src={src} alt="post_image" />
 
                     <div className={styles.post_info}>
-                        <div>
-                            <img className={styles.post_pfp} src={pfp} alt="pfp" />
+                        <div className={styles.group_1}>
+                            <div className={styles.post_pfp}>
+                                <img src={pfp} alt="profile_picture" />
+                            </div>
                             <span className={styles.post_title}> {title} </span>
                         </div>
 

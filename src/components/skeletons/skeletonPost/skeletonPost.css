@@ -1,0 +1,76 @@
+    :root{
+        --main-color: rgb(192, 125, 0);
+        --loading-color: rgba(192, 125, 0, 0.2);
+    }
+    
+    .skeleton_post{
+        width: calc(80% + 100px);
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        gap: 50px;
+    }
+
+    .skeleton_main_group{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skeleton_post_img{
+        width: 100%;
+        height: 600px;
+        background-color: var(--main-color);
+        animation: shimmer 3s ease infinite;
+    }
+
+    .skeleton_post_info{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .skeleton_post_pfp{
+        width: 48px;
+        height: 48px;
+        background-color: var(--main-color);
+        animation: shimmer 3s ease infinite;
+    }
+
+    .skeleton_post_title{
+        width: 400px;
+        height: 40px;
+        background-color: var(--main-color);
+        animation: shimmer 3s ease infinite;
+    }
+
+    .skeleton_post_likes{
+        width: 100px;
+        height: 40px;
+        background-color: var(--main-color);
+        animation: shimmer 3s ease infinite;
+    }
+
+    .skeleton_post_desc{
+        width: 100%;
+        height: 20px;
+        background-color: var(--main-color);
+        animation: shimmer 3s ease infinite;
+    }
+
+    /*Animations*/
+
+    @keyframes shimmer{
+        0%{
+            background-color: var(--main-color);
+        }
+        50%{
+            background-color: var(--loading-color);
+        }
+        100%{
+            background-color: var(--main-color);
+        }
+    }
